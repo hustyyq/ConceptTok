@@ -1,0 +1,28 @@
+wandb/
+vis_temp/
+vis_more/
+outputs/
+
+demo.ipynb
+imagenet_overlap_results.json
+.ipynb_checkpoints/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Exclude large model files
+evaluator/classify_image_graph_def.pb
+classify_image_graph_def.pb
+
+# Ignore models directory but allow autoregressive/models
+models/
+!autoregressive/
+!autoregressive/models/
+!repa-sae/
+!repa-sae/models/
+!repa-sae/models/**
+.DS_Store
+checkpoints/
